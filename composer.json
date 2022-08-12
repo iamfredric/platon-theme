@@ -1,0 +1,35 @@
+{
+  "name": "iamfredric/platon-theme",
+  "type": "project",
+  "description": "Wordpress theme starter kit",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Fredric",
+      "email": "fredric@panang.se"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    },
+    "files": [
+      "bootstrap/start.php"
+    ]
+  },
+  "require": {
+    "php": "^8.0",
+    "iamfredric/platon": "0.5.0",
+    "vlucas/phpdotenv": "^5.4",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.7"
+  },
+  "scripts": {
+    "sniff": "vendor/bin/phpcs --standard=PSR2 --encoding=utf-8 -p --colors ./app",
+    "fix": "vendor/bin/phpcbf --standard=PSR2 --encoding=utf-8 -p --colors ./app"
+  }
+}
