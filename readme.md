@@ -5,7 +5,7 @@ Platon makes Wordpress object oriented, with some smart automagic added to it.
 
 ### Installation
 
-- ```composer create-project iamfredric/platon-theme```
+- ```composer create-project iamfredric/platon-theme your-path --stability=dev```
 - Replace all occurances of [THEME_TITLE] with the title of your theme. (style.css + config/app.php)
 - Replace all occurances of [THEME_SLUG] with the slug of your theme. (style.css + config/app.php)
 
